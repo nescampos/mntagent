@@ -2,7 +2,7 @@ import { createPublicClient, http } from "viem";
 import { mantleSepoliaTestnet } from "viem/chains";
 
 /**
- * Creates a new public Viem client connected to the Avalanche Fuji testnet.
+ * Creates a new public Viem client connected to the Mantle Sepolia testnet.
  *
  * A public client is a client that is not connected to a specific wallet and
  * therefore cannot perform write operations.
@@ -14,7 +14,7 @@ export function createViemPublicClient() {
     /**
      * The chain to connect to.
      *
-     * In this case, we're using the Avalanche Fuji testnet.
+     * In this case, we're using the Mantle Sepolia testnet.
      */
     chain: mantleSepoliaTestnet,
 

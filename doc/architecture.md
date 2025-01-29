@@ -21,7 +21,7 @@ graph TB
     subgraph Blockchain Layer
         WalletClient[Viem Wallet Client]
         PublicClient[Viem Public Client]
-        AvalancheFuji[Avalanche Fuji Network]
+        MantleSepolia[Mantle Sepolia Network]
     end
 
     subgraph Tools Components
@@ -38,8 +38,8 @@ graph TB
     Assistant --> Tools
     Tools --> WalletClient
     Tools --> PublicClient
-    WalletClient --> AvalancheFuji
-    PublicClient --> AvalancheFuji
+    WalletClient --> MantleSepolia
+    PublicClient --> MantleSepolia
     Assistant --> Output
     Output --> CLI
 
@@ -57,7 +57,7 @@ graph TB
 
     class CLI,UserInput,Output interface
     class Assistant,Thread,Tools core
-    class WalletClient,PublicClient,AvalancheFuji blockchain
+    class WalletClient,PublicClient,MantleSepolia blockchain
     class GetBalance,GetAddress,SendTx,DeployERC20 tools
 ```
 
@@ -76,7 +76,7 @@ graph TB
 ### 3. Blockchain Layer
 - **Viem Wallet Client**: Handles authenticated blockchain transactions
 - **Viem Public Client**: Manages read-only blockchain operations
-- **Avalanche Fuji Network**: Target blockchain network for all operations
+- **Mantle Sepolia Network**: Target blockchain network for all operations
 
 ### 4. Tools Components
 Each tool is designed for specific blockchain operations:

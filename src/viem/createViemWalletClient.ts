@@ -3,7 +3,7 @@ import { privateKeyToAccount } from "viem/accounts";
 import { mantleSepoliaTestnet } from "viem/chains";
 
 /**
- * Creates a new Viem wallet client connected to the Avalanche Fuji testnet.
+ * Creates a new Viem wallet client connected to the Mantle Sepolia testnet.
  *
  * A wallet client is a client that is connected to a specific wallet and
  * can therefore perform write operations.
